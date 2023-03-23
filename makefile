@@ -11,7 +11,7 @@ endif
 
 
 CXX     = g++
-CPPFLAGS = -O3 -std=c++11 -fopenmp -mavx -w $(INTE) $(INTV) -march=native -m64 -ftree-vectorize
+CPPFLAGS = -O3 -std=c++11 -fopenmp -mavx -w $(INTE) $(INTV) -march=native -m64 -ftree-vectorize -DBOOST_ERROR_CODE_HEADER_ONLY
 DEBUG= -g -O0 -Wall  -std=c++11 -fopenmp -mavx -w 
 LDFLAGS = -fopenmp -lpthread  
 INC:=./include/
